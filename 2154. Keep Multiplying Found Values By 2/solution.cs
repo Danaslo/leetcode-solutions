@@ -3,7 +3,7 @@ public class Solution {
         Dictionary<int, int> numMap = new Dictionary<int, int>();
         foreach(int number in nums)
             numMap[number] = number;
-        while(numMap.ContainsKey(original) == true)
+        while(numMap.ContainsKey(original))
             original *=2;
         return original;
     }
